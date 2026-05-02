@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
+import model.dao.DaoFactory;
+import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
@@ -14,7 +16,7 @@ public class Program {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Department obj = new Department(1, "TI");
-
+		SellerDao sellerDao = DaoFactory.creatSellerDao();
 		Seller seller = new Seller(20, "Raimundo Brito", "raimundo@gmail.com", date, 2214.0, obj);
 		System.out.println(seller);
 	}
