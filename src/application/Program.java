@@ -19,13 +19,13 @@ public class Program {
 		Department obj = new Department(1, "TI");
 		SellerDao sellerDao = DaoFactory.creatSellerDao();
 		
-		Seller seller =  sellerDao.fingById(3);
+		Seller seller =  sellerDao.fingById(5);
 		
 		System.out.println(seller);
 		
 		
 		
-		//Seller seller = new Seller(20, "Raimundo Brito", "raimundo@gmail.com", date, 2214.0, obj);
+		
 		
 	}
 
