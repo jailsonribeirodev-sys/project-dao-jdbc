@@ -93,11 +93,12 @@ public class Seller implements Serializable {
 		Seller other = (Seller) obj;
 		return Objects.equals(id, other.id);
 	}
-
-	@Override
+	
+	@Override	
 	public String toString() {
-		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate= " +sdf.format(birthDate) + ", baseSalary="
-				+ baseSalary + ", department=" + department + "]";
+		
+		return id + ", " + name + ", " + email + ", " +sdf.format(birthDate) + ", "
+				+ baseSalary + "," + department ;
 	}
 
 }
